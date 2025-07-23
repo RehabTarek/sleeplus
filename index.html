@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teen Sleep Awareness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #424C55;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      box-shadow: #333;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #424C55;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Teen Sleep Blog</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+    </nav>
+  </header>
+
+  <section id="home" class="container">
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/f2/ee/c0/f2eec05673c0875ce4e376e019137791.jpg" alt="Teen sleeping" >
+      <h2>Why Sleep Matters?</h2>
+      <p>Teenagers need 8–10 hours of sleep. Lack of sleep can lead to depression, anxiety, weakened immunity, and poor academic performance.</p>
+
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/13/06/0d/13060dce40adb9462ff45e75bb02a3a1.jpg" alt="Sleep effects" height="370" >
+      <h2>Damages of Sleep Deprivation</h2>
+      <ul>
+        <li>Memory loss</li>
+        <li>Reduced focus</li>
+        <li>Hormonal imbalance</li>
+        <li>Risk of obesity and heart disease</li>
+        <li>Excessive daytime sleepiness</li>
+
+      </ul>
+    </div>
+  </section>
+
+    <section id="solutions" class="container">
+    <div class="card">
+      <h2>Solutions & Tips</h2>
+      <ul>
+        <li>Set a regular sleep schedule</li>
+        <li>Limit screen time 1 hour before bed</li>
+        <li>Practice relaxation before sleep</li>
+        <li>Use Caffeine alternatives instead</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Watch This Video</h2>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/dqONk48l5vY" title="Why Sleep Is Important for Teens" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <div class="card">
+      <h2>About This Blog</h2>
+      <p>We're MT Team, We wish reaching through many teens and achieve our goals. </p>
+      <p>This site is built to raise awareness about sleep deprivation in teens. Our goal is to educate and encourage better sleep habits through facts, solutions, and multimedia.</p>
+      <p>We believe that understanding the importance of sleep can lead to healthier lifestyles and improved academic performance for teenagers.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Teen Sleep Awareness. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
